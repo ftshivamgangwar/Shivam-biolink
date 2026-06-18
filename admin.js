@@ -1,0 +1,1 @@
+function addLink(){const title=document.getElementById('title').value;const url=document.getElementById('url').value;const links=JSON.parse(localStorage.getItem('links')||'[]');links.push({title,url});localStorage.setItem('links',JSON.stringify(links));alert('Added');}

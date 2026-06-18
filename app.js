@@ -1,0 +1,1 @@
+function render(){const links=JSON.parse(localStorage.getItem('links')||'[]');document.getElementById('links').innerHTML=links.map(x=>`<a class="link" href="${x.url}" target="_blank">${x.title}</a>`).join('')}render();
